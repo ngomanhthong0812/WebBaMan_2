@@ -1,0 +1,1260 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Goldsmith &#8211; Modern WooCommerce Theme</title>
+    <link rel="shortcut icon" href="../public/img/logo/123.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="my_search">
+        <a href="#" class="close_search"><i class='bx bx-x'></i></a>
+        <input type="text" placeholder="Search Product...">
+    </div>
+    <div class="menu_left">
+        <div class="menu_left-navbar">
+            <div class="energy">
+                <div class="close_left"><i class='bx bx-x'></i></div>
+                <a href="#" class="shopping_left"><i class='bx bx-shopping-bag'></i><span>0</span></a>
+                <a href="#" class="heart_left"><i class='bx bx-heart'></i><span>1</span></a>
+                <a href="#"><i class='bx bx-refresh'></i><span>0</span></a>
+                <a href="#"><i class='bx bx-file-find'></i><span>0</span></a>
+                <a href="#" class="user_left" onclick="signIn_menu()"><i class='bx bx-user'></i></a>
+            </div>
+            <div class="name_shop"><span>BAMAN</span></div>
+        </div>
+        <div class="menu_left-content">
+            <div class="menu_top-heart my_heart-1 add" style="padding: 2.5rem 2rem;">
+                <div class="title">Your Wishlist</div>
+                <div class="card_heart">
+                    <img src="../public/img/product/2.webp" alt="">
+                    <div class="card_heart-name_product">
+                        <span>Beaded double necklace</span>
+                        <div class="price" style="color: #9c9c9c;">$240.00 / <span style="color: salmon;">In
+                                stock</span></div>
+                        <span>Add to cart</span>
+                    </div>
+                    <i class='bx bx-trash'></i>
+                </div>
+            </div>
+
+            <div class="container_cart my_shopping-1 add" style="padding: 2.5rem 2rem;">
+                <div class="menu_top-ship-free">
+                    <div class="menu_top-ship-free--title">
+                        These product are limited, checkout within <span style="color: #9c9c9c;">00m : 00s</span>
+                    </div>
+                    <div class="menu_top-ship-free--content">
+                        <span>BUY $500.00 <span style="font-weight: 600;">MORE TO ENJOY FREE SHIPPING</span></span>
+                        <div class="icon">
+                            <img src="../public/img/ship/7.png" alt="">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_top-cart">
+                    <i class='bx bx-shopping-bag'></i>
+                    <div class="title">No products in the cart</div>
+                    <div class="button">
+                        <button>Start Shopping</button>
+                        <button>Return Policy</button>
+                    </div>
+                </div>
+               </div>
+
+            
+            <div class="account-area action-content active" data-target-name="account">
+                <div class="panel-top-title">
+                    <span class="form-action-btn signin-title active" data-target-form="login">
+                        <span onclick="signIn_menu()">Sign In<i class='bx bx-right-arrow-circle'></i>&nbsp;</span>
+                    </span>
+                    <span class="form-action-btn register-title" data-target-form="register">
+                        <span onclick="register_menu()"><i class='bx bx-user'></i>&nbsp;Register</span>
+                    </span>
+                </div>
+                <div class="account-area-form-wrapper">
+                    <div class="login-form-content active">
+                        <form class="woocommerce-form woocommerce-form-login login goldsmith-ajax-login add"
+                            method="post">
+                            <p class="form-row form-row-first goldsmith-is-required">
+                                <label for="username">Username or email&nbsp;<span class="required">*</span></label>
+                                <input type="text" class="input-text" name="username" id="username"
+                                    autocomplete="username">
+                                <span class="goldsmith-form-message"></span>
+                            </p>
+                            <p class="form-row form-row-last goldsmith-is-required">
+                                <label for="password">Password&nbsp;<span class="required">*</span></label>
+                                <input class="input-text" type="password" name="password" id="password"
+                                    autocomplete="current-password">
+                                <span class="goldsmith-form-message"></span>
+                            </p>
+                            <div class="clear"></div>
+                            <p class="form-row">
+                                <label
+                                    class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+                                    <input class="woocommerce-form__input woocommerce-form__input-checkbox"
+                                        name="rememberme" type="checkbox" value="forever"> <span>Remember me</span>
+                                </label>
+                                <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce"
+                                    value="0c6dd1c4b1">
+                                <input type="hidden" name="_wp_http_referer" value="/themes/goldsmith/">
+                                <input type="hidden" name="redirect" value="">
+                                <button type="submit"
+                                    class="woocommerce-button button woocommerce-form-login__submit goldsmith-btn-medium goldsmith-btn goldsmith-bg-black"
+                                    name="login" value="Login">Login</button>
+                            </p>
+                            <p class="lost_password">
+                                <a href="https://ninetheme.com/themes/goldsmith/my-account/lost-password/">Lost your
+                                    password?</a>
+                            </p>
+                            <div class="clear"></div>
+                            <input type="hidden" name="action" value="ajaxlogin">
+                        </form>
+                    </div>
+                    <div class="login-form-content active register add">
+                        <div class="register-form-content">
+                            <form method="post" class="woocommerce-form woocommerce-form-register register">
+                                <p class="form-row goldsmith-is-required">
+                                    <label for="reg_email">Email address&nbsp;<span class="required">*</span></label>
+                                    <input type="email" class="woocommerce-Input woocommerce-Input--text input-text"
+                                        name="email" id="reg_email" autocomplete="email" value="">
+                                    <span class="goldsmith-form-message"></span>
+                                </p>
+                                <p>A password will be sent to your email address.</p>
+                                <div class="woocommerce-privacy-policy-text">
+                                    <p>Your personal data will be used to support your experience throughout this
+                                        website, to manage access to your account, and for other purposes described in
+                                        our <a href="https://ninetheme.com/themes/goldsmith/privacy-policy/"
+                                            class="woocommerce-privacy-policy-link" target="_blank">privacy policy</a>.
+                                    </p>
+                                </div>
+                                <p class="form-row">
+                                    <input type="hidden" id="woocommerce-register-nonce"
+                                        name="woocommerce-register-nonce" value="33a08b3dbd">
+                                    <input type="hidden" name="_wp_http_referer" value="/themes/goldsmith/">
+                                    <button type="submit"
+                                        class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit goldsmith-btn-medium goldsmith-btn goldsmith-bg-black"
+                                        name="register" value="Register">Register</button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_left menu_top">
+        <div class="menu_left-navbar">
+            <div class="energy">
+                <div class="close_top" style="background-color: rgb(241, 241, 241);"><i class='bx bx-x'></i></div>
+                <a href="#" class="shopping_top" style="margin-left: 17rem;"><i
+                        class='bx bx-shopping-bag'></i><span>0</span></a>
+                <a href="#" class="heart_top"><i class='bx bx-heart'></i><span>1</span></a>
+                <a href="#" class="refresh_top"><i class='bx bx-refresh'></i><span>0</span></a>
+            </div>
+            <div class="menu_top-ship-free">
+                <div class="menu_top-ship-free--title">
+                    These product are limited, checkout within <span style="color: #9c9c9c;">00m : 00s</span>
+                </div>
+                <div class="menu_top-ship-free--content">
+                    <span>BUY $500.00 <span style="font-weight: 600;">MORE TO ENJOY FREE SHIPPING</span></span>
+                    <div class="icon">
+                        <img src="../public/img/ship/7.png" alt="">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_top-heart my_heart add_1">
+                <div class="title">Your Wishlist</div>
+                <div class="card_heart">
+                    <img src="../public/img/product/2.webp" alt="">
+                    <div class="card_heart-name_product">
+                        <span>Beaded double necklace</span>
+                        <div class="price" style="color: #9c9c9c;">$240.00 / <span style="color: salmon;">In
+                                stock</span></div>
+                        <span>Add to cart</span>
+                    </div>
+                    <i class='bx bx-trash'></i>
+                </div>
+            </div>
+
+            <div class="menu_top-cart add_1 my_shopping">
+                <i class='bx bx-shopping-bag'></i>
+                <div class="title">No products in the cart</div>
+                <div class="button">
+                    <button>Start Shopping</button>
+                    <button>Return Policy</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container_navbar">
+        <div class="navbar">
+            <div class="icon">
+                <i class='bx bxl-facebook-circle' style='color:#ffffff'></i>
+                <i class='bx bxl-twitter' style='color:#ffffff'></i>
+                <i class='bx bxl-youtube' style='color:#ffffff'></i>
+            </div>
+            <div class="title">FREE SHIPPING ON ALL ORDER OVER $75</div>
+            <div class="content">
+                <a href="">CART</a>
+                <a href="">SEARCH</a>
+                <a href="">HELP</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_menu">
+        <div class="menu" style="position: relative;">
+            <div class="menu_1">
+                <li><a href="#">HOME<i class='bx bx-chevron-down'></i></a>
+                    <ul style=" box-shadow: -5px 0px 5px rgb(221, 221, 221);">
+                        <li><a href="#">Home Main</a></li>
+                        <li><a href="#">Modern</a></li>
+                        <li><a href="#">Home Centered</a></li>
+                        <li><a href="#">Left Sidebar</a></li>
+                        <li><a href="#">Full Screen Slider</a></li>
+                        <li><a href="#">Slider + Grid Banner</a></li>
+                        <li><a href="#">Mosaic Banner</a></li>
+                        <li><a href="#">Parallax</a></li>
+                        <li><a href="#">Product Landing</a></li>
+                        <li><a href="#">Campaign</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Personal</a></li>
+                        <li><a href="#">Split</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SHOP<i class='bx bx-chevron-down'></i></a>
+                    <ul style="width: 100%; display: flex; gap: 20px; padding: 1.5rem 5rem;">
+                        <div style="width: 20%;">
+                            <li style="font-size: 18px;">Catalog</li>
+                            <li><a href="">Style 1</a></li>
+                            <li><a href="">Style 2</a></li>
+                            <li><a href="">Style 3</a></li>
+                            <li><a href="">Load More</a></li>
+                            <li><a href="">Infinite Scroll</a></li>
+                            <li><a href="">Pagination</a></li>
+                        </div>
+                        <div style="width: 20%;">
+                            <li style="font-size: 18px;">Shop Layouts</li>
+                            <li><a href="">Default</a></li>
+                            <li><a href="">Left Sidebar</a></li>
+                            <li><a href="">Right Sidebar</a></li>
+                            <li><a href="">Top Sidebar</a></li>
+                            <li><a href="">Fixed Sidebar ( Left )</a></li>
+                            <li><a href="">Full Width ( no-sidebar )</a></li>
+                            <li><a href="">Masonry Grid</a></li>
+                            <li><a href="">Shop Category Page</a></li>
+                            <li><a href="">Shop Tag Page</a></li>
+                            <li><a href="">Shop Brand Page</a></li>
+                        </div>
+                        <div style="width: 20%;">
+                            <li style="font-size: 18px;">Shop Columns</li>
+                            <li><a href="">List Type</a></li>
+                            <li><a href="">Column Three</a></li>
+                            <li><a href="">Column Four</a></li>
+                            <li><a href="">Column Five</a></li>
+                            <li><a href="">Column Six ( wide )</a></li>
+                        </div>
+                        <div style="width: 20%;">
+                            <li style="font-size: 18px;">Hero Types</li>
+                            <li><a href="">Category List</a></li>
+                            <li><a href="">Category Slider</a></li>
+                            <li><a href="">Hero Small</a></li>
+                            <li><a href="">Hero Breadcrumbs</a></li>
+                            <li><a href="">Shop No Title</a></li>
+                        </div>
+                        <div style="width: 20%;">
+                            <li style="font-size: 18px;">Shop Pages</li>
+                            <li><a href="">Catalog</a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Checkout</a></li>
+                            <li><a href="">Checkout ( Multisteps )</a></li>
+                            <li><a href="">My Account ( 2 Column )</a></li>
+                            <li><a href="">My account ( Tabbed )</a></li>
+                            <li><a href="">Order Tracking</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="#">PRODUCT<i class='bx bx-chevron-down'></i></a>
+                    <ul style="width: 100%; display: flex; gap: 20px; padding: 1.5rem 5rem;">
+                        <div style="width: 25%;">
+                            <li style="font-size: 18px;">Product Types</li>
+                            <li><a href="">Simple</a></li>
+                            <li><a href="">Color Variable</a></li>
+                            <li><a href="">Image Variable</a></li>
+                            <li><a href="">Grouped</a></li>
+                            <li><a href="">Extenal</a></li>
+                            <li><a href="">Out Of Stock</a></li>
+                            <li><a href="">Countdown</a></li>
+                            <li><a href="">Popup Video</a></li>
+                            <li><a href="">360deg Product</a></li>
+                        </div>
+                        <div style="width: 25%;">
+                            <li style="font-size: 18px;">Showcase Style</li>
+                            <li><a href="">Carousel</a></li>
+                            <li><a href="">Carousel Big</a></li>
+                            <li><a href="">Carousel Small</a></li>
+                            <li><a href="">Carousel Mini</a></li>
+                            <li><a href="">Carousel Coverflow</a></li>
+                            <li><a href="">Video Slider</a></li>
+                            <li><a href="">Stretch</a></li>
+                        </div>
+                        <div style="width: 25%;">
+                            <li style="font-size: 18px;">Gallery Styles</li>
+                            <li><a href="">Thumbs Left</a></li>
+                            <li><a href="">Thumbs Right</a></li>
+                            <li><a href="">Thumbs Bottom</a></li>
+                            <li><a href="">Thumbs Top</a></li>
+                            <li><a href="">Grid</a></li>
+                            <li><a href="">Column 2</a></li>
+                            <li><a href="">Column 3</a></li>
+                            <li><a href="">Video Grid - Auto Start</a></li>
+                            <li><a href="">Video Popup</a></li>
+                        </div>
+                        <div style="width: 25%;">
+                            <li style="font-size: 18px;">Page Layout</li>
+                            <li><a href="">Left Sidebar</a></li>
+                            <li><a href="">Right Sidebar</a></li>
+                            <li><a href="">Fullwidth</a></li>
+                            <li><a href="">Tabs</a></li>
+                            <li><a href="">Accordion</a></li>
+                            <li><a href="">Accordion 2</a></li>
+                            <li><a href="">Advenced Review & Q&A</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="#">TEMPLATER<i class='bx bx-chevron-down'></i></a>
+                    <ul>
+                        <li><a href="#">Header Slidebar</a></li>
+                        <li><a href="#">Header Sidebar Right</a></li>
+                        <li><a href="#">Header Sidebar Dark</a></li>
+                        <li><a href="#">Light Styles</a></li>
+                        <li><a href="#">Dark Styles</a></li>
+                        <li><a href="#">Transparent Styles</a></li>
+                        <li><a href="#">Topbars / Footers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PAGES<i class='bx bx-chevron-down'></i></a>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                        <li><a href="#">Coming Soon</a></li>
+                        <li><a href="#">404</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MEGA<i class='bx bx-chevron-down'></i></a></li>
+            </div>
+            <div class="name_shop" style="position: absolute; left: 50%; transform: translateX(-50%);">BAMAN</div>
+            <div class="energy">
+                <a href="#" class="search"><i class='bx bx-search' style="padding-right: 1rem;"></i></a>
+                <a href="#" class="shopping"><i class='bx bx-shopping-bag'></i><span>0</span></a>
+                <a href="#" class="heart"><i class='bx bx-heart'></i><span>1</span></a>
+                <a href="#"><i class='bx bx-refresh'></i><span>0</span></a>
+                <a href="#" class="user"><i class='bx bx-user'></i></a>
+                <a href="#"><i class='bx bx-menu' style="padding-left: 1rem;"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="my_body">
+        <div class="my_banner">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active" data-bs-interval="8000">
+                        <img src="../public/img/banner/accesories-full-1.jpg" class="d-block w-100 h-100" alt="...">
+                        <div class="slider_content">
+                            <h1>Meet The Lines Of <br> The Millennium</h1>
+                            <p>Fashion is to please your eye. Shapes and proportions are for your intellect. I have an
+                                obsession with details and pattern.</p>
+                            <button>Check Collection</button>
+                            <button class="button-2" style="background-color: transparent; margin-left: 10px;">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../public/img/banner/accesories-full-2.jpg" class="d-block w-100 h-100" alt="...">
+                        <div class="slider_content">
+                            <h1>New Modern <br>Collection</h1>
+                            <p>Elegance isn't solely defined by what you wear. It's how you carry yourself, how you
+                                speak, what you read.</p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="banner_2">
+                <img src="../public/img/banner/3.png" alt="" class="h-100 w-100">
+                <div class="content">
+                    <b>GOLD PIERCING</b>
+                    <p>FLASH SALE</p>
+                    <p>15 NOV - 25 NOV</p>
+                    <p>See More Products</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="icon_prioritize">
+            <div class="icon_prioritize_inner">
+                <img src="../public/img/icon_prioritize/1.png" alt="">
+                <h5>Amazing Value Every Day</h5>
+                <span>Items prices that fit your budget</span>
+            </div>
+            <div class="icon_prioritize_inner">
+                <img src="../public/img/icon_prioritize/2.png" alt="">
+                <h5>Successful Customer Service</h5>
+                <span>We work with a focus on 100% customer satisfaction.</span>
+            </div>
+            <div class="icon_prioritize_inner">
+                <img src="../public/img/icon_prioritize/3.png" alt="">
+                <h5>All Payment Methods</h5>
+                <span>Don't bother with payment details.</span>
+            </div>
+            <div class="icon_prioritize_inner">
+                <img src="../public/img/icon_prioritize/4.png" alt="">
+                <h5>Completely free shipping</h5>
+                <span>We'll handle the shipping.</span>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="banner_2">
+                <img src="../public/img/product/banner.png" alt="" class="h-100 w-100">
+                <div class="content">
+                    <b>NOSE RINGS</b>
+                    <p>NOSE EARRING</p>
+                    <p>25 NOV - 29 NOV</p>
+                    <p>See More Products</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/1.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(1)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Read more</button>
+                    </div>
+                    <p>The Air Scoop-Neck Tee</p>
+                    <div class="price">$95.00</div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/2.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(2)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Add to cart</button>
+                    </div>
+                    <p>Beaded double necklace</p>
+                    <div class="price">$240.00</div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/3.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(3)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Add to cart</button>
+                    </div>
+                    <p>Twisted hoop earrings</p>
+                    <div class="price">$144.00
+                        <div class="star_icon">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/4.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(4)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Add to cart</button>
+                    </div>
+                    <p>Hoop pendant earrings</p>
+                    <div class="price">$144.00</div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/5.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(5)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Add to cart</button>
+                    </div>
+                    <p>Embossed hoop earrings</p>
+                    <div class="price">$144.00
+                        <div class="star_icon">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/6.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(6)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="sale"><div>SALE!</div><div>18%</div></div>
+                        <button>Select options</button>
+                    </div>
+                    <p>Embossed hoop earrings</p>
+                    <div class="price">$18.00 – $32.00
+                        <div class="star_icon">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/7.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(7)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Add to cart</button>
+                    </div>
+                    <p>Rhinestone crystal earring</p>
+                    <div class="price">$68.00</div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/8.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(8)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Add to cart</button>
+                    </div>
+                    <p>Embossed hoop earrings</p>
+                    <div class="price">$68.00</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container_sale">
+            <div class="sale">
+                <div class="sale_1"><span>Super discount for your first purchase</span><span>FIRST250</span><span>Use
+                        discount code in checkout page.</span></div>
+                <div class="sale_2"><span>2nd shopping surprise campaign!</span><button>Check Products <i
+                            class='bx bx-skip-next'></i></button></div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="banner_2">
+                <img src="../public/img/product/banner_1.png" alt="" class="h-100 w-100">
+                <div class="content">
+                    <b>NOSE RINGS</b>
+                    <p>NECKLACES</p>
+                    <p>25 NOV - 29 NOV</p>
+                    <p>See More Products</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/1.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(1)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Read more</button>
+                    </div>
+                    <p>The Air Scoop-Neck Tee</p>
+                    <div class="price">$95.00</div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/2.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(2)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Add to cart</button>
+                    </div>
+                    <p>Beaded double necklace</p>
+                    <div class="price">$240.00</div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/3.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(3)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Add to cart</button>
+                    </div>
+                    <p>Twisted hoop earrings</p>
+                    <div class="price">$144.00
+                        <div class="star_icon">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/4.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(4)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Add to cart</button>
+                    </div>
+                    <p>Hoop pendant earrings</p>
+                    <div class="price">$144.00</div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/5.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(5)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Add to cart</button>
+                    </div>
+                    <p>Embossed hoop earrings</p>
+                    <div class="price">$144.00
+                        <div class="star_icon">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/6.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(6)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="sale"><div>SALE!</div><div>18%</div></div>
+                        <button>Select options</button>
+                    </div>
+                    <p>Embossed hoop earrings</p>
+                    <div class="price">$18.00 – $32.00
+                        <div class="star_icon">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/7.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(7)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Add to cart</button>
+                    </div>
+                    <p>Rhinestone crystal earring</p>
+                    <div class="price">$68.00</div>
+                </div>
+                <div class="my_card">
+                    <div class="image">
+                        <img src="../public/img/product/8.webp" alt="">
+                        <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                        <div class="icon" onclick="openZoomCard(8)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                        <button>Read more</button>
+                    </div>
+                    <p>Embossed hoop earrings</p>
+                    <div class="price">$68.00</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container_sale">
+            <div class="sale">
+                <div class="sale_1"><span>Super discount for your first purchase</span><span>FIRST250</span><span>Use
+                        discount code in checkout page.</span></div>
+                <div class="sale_2"><span>2nd shopping surprise campaign!</span><button>Check Products <i
+                            class='bx bx-skip-next'></i></button></div>
+            </div>
+        </div>
+
+        <div class="featured_Deals">
+            <div class="featured_Deals-child--1">
+                <div class="featured_Deals-child--2-title">
+                    <div><h5>Deals of the Week</h5></div>
+                    <div>View All</div>
+                </div>
+                <div class="my_card">
+                    <div class="my_card_1">
+                        <img src="../public/img/product/2-2.webp" alt="">
+                        <div class="information">
+                            <div class="name">360deg Product</div>
+                            <div class="price">$144.00</div>
+                            <div>Add to cart</div>
+                        </div>
+                    </div>
+                    <div class="my_card_2">
+                        <div>Expired</div>
+                        <div>Remains until the end of the offer</div>
+                    </div>
+                </div>
+                <div class="my_card">
+                    <div class="my_card_1">
+                        <img src="../public/img/product/1.webp" alt="">
+                        <div class="information">
+                            <div class="name">The Air Scoop-Neck Tee</div>
+                            <div class="price">$195.00</div>
+                            <div>Add to cart</div>
+                        </div>
+                    </div>
+                    <div class="my_card_2">
+                        <div>Expired</div>
+                        <div>Remains until the end of the offer</div>
+                    </div>
+                </div>
+                <div class="my_card">
+                    <div class="my_card_1">
+                        <img src="../public/img/product/2.webp" alt="">
+                        <div class="information">
+                            <div class="name">Beaded double necklace</div>
+                            <div class="price">$140.00</div>
+                            <div>Add to cart</div>
+                        </div>
+                    </div>
+                    <div class="my_card_2">
+                        <div>Expired</div>
+                        <div>Remains until the end of the offer</div>
+                    </div>
+                </div>
+
+
+
+
+                
+            </div>
+            <div class="featured_Deals-child--2">
+                <div class="featured_Deals-child--2-1">
+                    <div class="image banner_2">
+                        <img src="../public/img/product/banner_2.png" alt="">
+                        <div class="content">
+                            <b>NOSE RINGS</b>
+                            <p>LATEST BESTELLERS</p>
+                             <br><br><br><br>
+                            <p class="button">See More Products</p>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/1.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(1)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <button>Read more</button>
+                            </div>
+                            <p>The Air Scoop-Neck Tee</p>
+                            <div class="price">$95.00</div>
+                        </div>
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/2.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(2)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <button>Add to cart</button>
+                            </div>
+                            <p>Beaded double necklace</p>
+                            <div class="price">$240.00</div>
+                        </div>
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/3.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(3)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <button>Add to cart</button>
+                            </div>
+                            <p>Twisted hoop earrings</p>
+                            <div class="price">$144.00
+                                <div class="star_icon">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/4.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(4)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <button>Add to cart</button>
+                            </div>
+                            <p>Hoop pendant earrings</p>
+                            <div class="price">$144.00</div>
+                        </div>
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/5.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(5)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <button>Add to cart</button>
+                            </div>
+                            <p>Embossed hoop earrings</p>
+                            <div class="price">$144.00
+                                <div class="star_icon">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/6.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(6)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="sale"><div>SALE!</div><div>18%</div></div>
+                                <button>Select options</button>
+                            </div>
+                            <p>Embossed hoop earrings</p>
+                            <div class="price">$18.00 – $32.00
+                                <div class="star_icon">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/7.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(7)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <button>Add to cart</button>
+                            </div>
+                            <p>Rhinestone crystal earring</p>
+                            <div class="price">$68.00</div>
+                        </div>
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/8.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(8)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <button>Read more</button>
+                            </div>
+                            <p>Embossed hoop earrings</p>
+                            <div class="price">$68.00</div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <div class="featured_Deals-child--2-2">
+                    <div class="featured_Deals-child--2-2-sale">
+                        <div>SALE</div>
+                        <div><b>Super discount for your first purchase</b>
+                            <span>Use discount code in checkout page.</span>
+                        </div>
+                        <div>BUYNOW225</div>
+                    </div>
+                </div>
+                <div class="featured_Deals-child--2-title">
+                    <div><h5>Deals of the Week</h5><span>Dont miss out on this weeks deals</span></div>
+                    <div>View All</div>
+                </div>
+
+                <div class="featured_Deals-child--2-card">
+                    <i class='bx bx-chevron-left prev' onclick="prevEndow()"></i>
+                    <i class='bx bx-chevron-right next' onclick="nextEndow()"></i>
+                    <div class="product_card">
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/1.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(1)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-shopping-bag'></i><i class='bx bxs-right-arrow'></i></div>
+                            </div>
+                            <p>The Air Scoop-Neck Tee</p>
+                            <div class="price">
+                                <div class="star_icon">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <span>1 REVIEW</span>
+                                </div>
+                                $144.00
+                            </div>
+                            <div class="view"><div></div></div>
+                            <div class="quantity">
+                                <div>Sold: <b>12</b></div>
+                                <div>Available: <b>8</b></div>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/2.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(2)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-shopping-bag'></i><i class='bx bxs-right-arrow'></i></div>
+                            </div>
+                            <p>Beaded double necklace</p>
+                            <div class="price">
+                                <div class="star_icon">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <span>1 REVIEW</span>
+                                </div>
+                                $144.00
+                            </div>
+                            <div class="view"><div></div></div>
+                            <div class="quantity">
+                                <div>Sold: <b>12</b></div>
+                                <div>Available: <b>8</b></div>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/5.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(5)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-shopping-bag'></i><i class='bx bxs-right-arrow'></i></div>
+                            </div>
+                            <p>Embossed hoop earrings</p>
+                            <div class="price">
+                                <div class="star_icon">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <span>1 REVIEW</span>
+                                </div>
+                                $144.00
+                            </div>
+                            <div class="view"><div></div></div>
+                            <div class="quantity">
+                                <div>Sold: <b>3</b></div>
+                                <div>Available: <b>439</b></div>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/6.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(6)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-shopping-bag'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="sale"><div>SALE!</div><div>18%</div></div>
+                            </div>
+                            <p>Embossed hoop earrings</p>
+                            <div class="price">
+                                <div class="star_icon">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <span>1 REVIEW</span>
+                                </div>
+                                $144.00
+                            </div>
+                            <div class="view"><div></div></div>
+                            <div class="quantity">
+                                <div>Sold: <b>15</b></div>
+                                <div>Available: <b>9</b></div>
+                            </div>
+                        </div>
+                        <div class="my_card">
+                            <div class="image">
+                                <img src="../public/img/product/6.webp" alt="">
+                                <div class="icon"> <i class='bx bx-heart'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-refresh'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon" onclick="openZoomCard(6)"> <i class='bx bx-fullscreen'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="icon"><i class='bx bx-shopping-bag'></i><i class='bx bxs-right-arrow'></i></div>
+                                <div class="sale"><div>SALE!</div><div>18%</div></div>
+                            </div>
+                            <p>Embossed hoop earrings</p>
+                            <div class="price">
+                                <div class="star_icon">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <span>1 REVIEW</span>
+                                </div>
+                                $144.00
+                            </div>
+                            <div class="view"><div></div></div>
+                            <div class="quantity">
+                                <div>Sold: <b>13</b></div>
+                                <div>Available: <b>36</b></div>
+                            </div>
+                        </div>
+                        
+        
+                    </div>
+                </div>
+                <div class="featured_Deals-child--2-banner_3">
+                    <img src="../public/img/product/banner_3.png" alt="">
+
+                    <div class="featured_Deals-child--2-banner_3-1">
+                        <span class="status">DEALS OF THE WEEK</span>
+                        <h5> Reflect the bonds of the past into your modern life.</h5>
+                        <div class="content">Fashion is about dressing according to what's fashionable. Style is more about being yourself. Design is a constant challenge to balance comfort with luxe...</div>
+                        <div class="countdown" id="countdown">
+                            <div class="countdown-item">
+                                <span id="days">00</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="icon">-</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="hours">00</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="icon">-</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="minutes">00</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="icon">-</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="seconds">00</span>
+                            </div>
+                        </div>
+                        <button>Buy products <i class='bx bxs-right-arrow'></i></button>
+    
+                    </div>
+                
+                </div>
+                
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- zoom card -->
+        <div class="container_show_product_card">
+            <div class="show_product_card">
+                <div class="close_zoom"><i class='bx bx-x'></i></div>
+              <div class="show_product_card-1">
+                <i class='bx bx-chevron-left my_prev' ></i>
+                <div class="image">
+                  <img src="../public/img/product/1.webp" alt="" />
+                  <img src="../public/img/product/1_1.webp" alt="" />
+                  <img src="../public/img/product/1_2.webp" alt="" />
+                  <img src="../public/img/product/1_3.webp" alt="" />
+                  <img src="../public/img/product/1-4.webp" alt="" />
+                </div>
+                <i class='bx bx-chevron-right my_next' ></i>
+                <div class="image_child">
+                    <img src="../public/img/product/1.webp" alt="" onclick="image_zoomCard(0)" />
+                    <img src="../public/img/product/1_1.webp" alt="" onclick="image_zoomCard(1)" />
+                    <img src="../public/img/product/1_2.webp" alt="" onclick="image_zoomCard(2)" />
+                    <img src="../public/img/product/1_3.webp" alt="" onclick="image_zoomCard(3)" />
+                    <img src="" alt="" onclick="image_zoomCard(4)"/>
+                </div>
+              </div>
+              <div class="show_product_card-2">
+                  <div class="title">
+                      The Air Scoop-Neck Tee
+                  </div>
+                  <div class="price">$95.00</div>
+                  <span class="status">OUT OF STOCK</span>
+                  <div class="content">Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.</div>
+                  <a href="#">Read more</a>
+                  <div class="categories"><span>CATEGORIES:</span> Gold Bangles, Gold Buckle, Gold Piercing, Gold Rings, Nose Rings, Silver Rings</div>
+                  <div class="categories"><span>TAGS:</span>Bestseller, Trend</div>
+              </div>
+            </div>
+          </div>
+          <!-- zoom card -->
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="footer">
+        <div class="container_footer">
+           
+                <div class="footer-section">
+                    <h6 class="footer-heading">About Wooma</h6>
+                    <ul class="footer-list">
+                        <li><a href="">Wooma Inside</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Company</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Brands</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h6 class="footer-heading">Categories</h6>
+                    <ul class="footer-list">
+                        <li><a href="">Rings</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Earrings</a></li>
+                        <li><a href="">Gold Buckle</a></li>
+                        <li><a href="">Bracelets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h6 class="footer-heading">Campaigns</h6>
+                    <ul class="footer-list">
+                        <li><a href="">Winter Shoes</a></li>
+                        <li><a href="">Women T-shirts</a></li>
+                        <li><a href="">%50 Sales</a></li>
+                        <li><a href="">Outlet</a></li>
+                        <li><a href="">Pre-Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h6 class="footer-heading">Help</h6>
+                    <ul class="footer-list">
+                        <li><a href="">Order Tracking</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Tutorials</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+            
+            <div class="container_icon">
+                <div class="footer-section">
+                    <h6 class="footer-heading">Download app for faster shopping:</h6>
+                    <ul class="footer-app-links">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M297.2 248.9C311.6 228.3 320 203.2 320 176c0-70.7-57.3-128-128-128S64 105.3 64 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7l0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5H109c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8l0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C27.6 247.9 16 213.3 16 176C16 78.8 94.8 0 192 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4l0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5H226.4c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8l0 0 0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM192 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80V416H272v16c0 44.2-35.8 80-80 80z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM127 384.5c-5.5 9.6-17.8 12.8-27.3 7.3-9.6-5.5-12.8-17.8-7.3-27.3l14.3-24.7c16.1-4.9 29.3-1.1 39.6 11.4L127 384.5zm138.9-53.9H84c-11 0-20-9-20-20s9-20 20-20h51l65.4-113.2-20.5-35.4c-5.5-9.6-2.2-21.8 7.3-27.3 9.6-5.5 21.8-2.2 27.3 7.3l8.9 15.4 8.9-15.4c5.5-9.6 17.8-12.8 27.3-7.3 9.6 5.5 12.8 17.8 7.3 27.3l-85.8 148.6h62.1c20.2 0 31.5 23.7 22.7 40zm98.1 0h-29l19.6 33.9c5.5 9.6 2.2 21.8-7.3 27.3-9.6 5.5-21.8 2.2-27.3-7.3-32.9-56.9-57.5-99.7-74-128.1-16.7-29-4.8-58 7.1-67.8 13.1 22.7 32.7 56.7 58.9 102h52c11 0 20 9 20 20 0 11.1-9 20-20 20z"/></svg>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h6 class="footer-heading">Follow</h6>
+                    <ul class="footer-social-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container_footer_2">
+        <div class="footer-2">
+            <div class="contact-info">
+                <ul>
+                    <li><a href="mailto:hello@demogoldsmith.com">HELLO@DEMOBAMAN.COM</a></li>
+                </ul>
+            </div>
+            <div class="payment-method">
+                <img src="https://f8g8b9p5.rocketcdn.me/themes/goldsmith/wp-content/uploads/2021/12/payment.webp"
+                    alt="Payment Methods">
+            </div>
+            <div class="copyright">
+                <p>&copy; BAMAN.com</p>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <div class="my_home_click">
+        <button ondblclick="top_button()"><i class='bx bx-chevron-up' ></i></button>
+    </div>
+
+    <script src="../public/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+/* Định dạng cho container chính */
+.container {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: #ffffcc;
+    position: relative;
+}
+
+/* Định dạng cho tiêu đề */
+.heading h4 {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #070606;
+    margin-bottom: 20px;
+}
+
+/* Định dạng cho nút */
+.button {
+    padding: 12px 24px;
+    position: absolute;
+    bottom: 60px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: #d6c403;
+    color: #070606;
+    border-radius: 5px;
+    position: absolute;
+    text-decoration: none;
+    border-radius: 30px;
+    letter-spacing: 0.3px;
+}
